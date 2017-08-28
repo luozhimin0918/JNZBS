@@ -9,7 +9,7 @@ package com.jyh.gxcjzbs.common.constant;
 
 public class UrlConstant {
 
-    public static final String URL_BASE = "http://gxsp.108tec.com";
+    public static final String URL_BASE = "http://byzb.108tec.com";
 //    public static final String URL_BASE = "http://live1.108tec.com";
 
     //配置信息

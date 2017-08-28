@@ -86,7 +86,7 @@ public class fragment_zb extends Fragment implements OnClickListener {
     RollDotViewPager rollDotViewpager;
     PageLoadLayout pageLoadLayout;
     LinearLayout rollLiner;
-    ImageView  playBtn;
+    ImageView  playBtn,playBigBtn;
     private RequestQueue queue;
     private KXTApplication application;
     @Override
@@ -119,6 +119,14 @@ public class fragment_zb extends Fragment implements OnClickListener {
                 joinLive();
             }
         });
+        playBigBtn.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                joinLive();
+            }
+        });
         return view;
     }
 
@@ -138,7 +146,9 @@ public class fragment_zb extends Fragment implements OnClickListener {
                     if(navinEntity!=null&&navinEntity.getCode()==200){
                         slideShow=navinEntity.getData().getSlideshow();
                         buttonShow=navinEntity.getData().getButton();
-                        if(slideShow!=null&&slideShow.size()>0){
+                        if(slideShow==null&&buttonShow==null||slideShow.size()==0&&buttonShow.size()==0){
+                            playBigBtn.setVisibility(View.VISIBLE);
+                        }else if(slideShow!=null&&slideShow.size()>0){
                             optionView();
                         }else{
                             convenientBanner.setVisibility(View.GONE);
@@ -295,6 +305,7 @@ public class fragment_zb extends Fragment implements OnClickListener {
         pageLoadLayout=(PageLoadLayout)view.findViewById(R.id.page_load);
         rollLiner= (LinearLayout) view.findViewById(R.id.rollLiner);
         playBtn= (ImageView) view.findViewById(R.id.playBtn);
+        playBigBtn= (ImageView) view.findViewById(R.id.playBigBtn);
         intent2 = new Intent(getActivity(), WebActivity.class);
     }
 

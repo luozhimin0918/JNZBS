@@ -20,47 +20,59 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <com.jyh.gxcjzbs.view.PageLoadLayout
-        android:id="@+id/page_load"
+    <FrameLayout
         android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <ScrollView
-            android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jyh.gxcjzbs.view.PageLoadLayout
+            android:id="@+id/page_load"
             android:layout_weight="1"
-            android:scrollbars="none"
-            android:layout_height="match_parent">
-            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_weight="1"
+                android:scrollbars="none"
                 android:layout_height="match_parent">
-                <com.bigkoo.convenientbanner.ConvenientBanner
-                    android:id="@+id/convenientBanner"
-                    android:layout_width="match_parent"
-                    android:layout_height="195dp"
-                    app:canLoop="true"/>
                 <LinearLayout
-                    android:id="@+id/rollLiner"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></LinearLayout>
-                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@color/line_color2"/>
-                <ImageView
-                    android:id="@+id/playBtn"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/guang_play"
-                    android:layout_height="225dp" />
-                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/line_color2"/>
-            </LinearLayout>
-        </ScrollView>
-    </com.jyh.gxcjzbs.view.PageLoadLayout>
+                    android:layout_height="match_parent">
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/convenientBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        app:canLoop="true"/>
+                    <LinearLayout
+                        android:id="@+id/rollLiner"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></LinearLayout>
+                    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@color/line_color2"/>
+                    <ImageView
+                        android:id="@+id/playBtn"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/guang_play"
+                        android:layout_height="225dp" />
+                    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/line_color2"/>
+                </LinearLayout>
+            </ScrollView>
+        </com.jyh.gxcjzbs.view.PageLoadLayout>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/playBigBtn"
+            android:scaleType="fitXY"
+            android:background="@drawable/live_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
 </LinearLayout>
