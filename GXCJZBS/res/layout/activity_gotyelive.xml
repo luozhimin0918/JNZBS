@@ -5,7 +5,7 @@
              android:layout_height="match_parent"
              android:background="?attr/flash_bg">
 
-    <com.jyh.gxcjzbs.view.MyLinearLayout
+    <com.jyh.byzb.view.MyLinearLayout
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -128,12 +128,12 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.jyh.gxcjzbs.view.MyViewPager2
+        <com.jyh.byzb.view.MyViewPager2
             android:id="@+id/live_fragment"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1.75"/>
-    </com.jyh.gxcjzbs.view.MyLinearLayout>
+    </com.jyh.byzb.view.MyLinearLayout>
 
     <ImageView
         android:id="@+id/livebackId"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.jyh.gxcjzbs"
+          package="com.jyh.byzb"
           android:versionCode="1"
           android:versionName="1.0">
 
@@ -33,7 +33,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
-        android:name="com.jyh.gxcjzbs.bean.KXTApplication"
+        android:name=".bean.KXTApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -41,7 +41,7 @@
         android:persistent="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.jyh.gxcjzbs.WelcomeActivity"
+            android:name=".WelcomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -53,27 +53,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jyh.gxcjzbs.AdActivity"
+            android:name=".AdActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
         </activity>
         <activity
-            android:name="com.jyh.gxcjzbs.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.jyh.gxcjzbs.Login_One"
+            android:name=".Login_One"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity
-            android:name="com.jyh.gxcjzbs.Register_One"
+            android:name=".Register_One"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity
-            android:name="com.jyh.gxcjzbs.GotyeLiveActivity"
+            android:name=".GotyeLiveActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -86,30 +86,30 @@
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
-            android:name="com.jyh.gxcjzbs.CLActivity"
+            android:name=".CLActivity"
             android:screenOrientation="portrait"
             android:theme="@style/myDialogTheme"/>
 
         <activity
-            android:name="com.jyh.gxcjzbs.FunctionActivity"
+            android:name=".FunctionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/myDialogTheme"/>
         <activity
-            android:name="com.jyh.gxcjzbs.WebActivity"
+            android:name=".WebActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jyh.gxcjzbs.MineActivity"
+            android:name=".MineActivity"
             android:screenOrientation="portrait"
             android:theme="@style/myDialogTheme"/>
         <activity
-            android:name="com.jyh.gxcjzbs.UserActivity"
+            android:name=".UserActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jyh.gxcjzbs.ChangePwdActivity"
+            android:name=".ChangePwdActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jyh.gxcjzbs.ChangeNameActivity"
+            android:name=".ChangeNameActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".PrivateChatActivity"
@@ -117,12 +117,12 @@
             android:screenOrientation="portrait"
         />
 
-        <service android:name="com.jyh.gxcjzbs.service.ChatService">
+        <service android:name=".service.ChatService">
             <intent-filter android:priority="1000">
                 <action android:name="ChatService"/>
             </intent-filter>
         </service>
-        <service android:name="com.jyh.gxcjzbs.service.ImageService">
+        <service android:name=".service.ImageService">
             <intent-filter android:priority="1000">
                 <action android:name="ImageService"/>
             </intent-filter>
@@ -130,7 +130,7 @@
 
         <!-- 监听网络状态的广播 -->
         <receiver
-            android:name="com.jyh.gxcjzbs.receiver.LoadedImgReceiver"
+            android:name=".receiver.LoadedImgReceiver"
             android:exported="true"
             android:priority="2147483647">
             <intent-filter android:priority="1000">

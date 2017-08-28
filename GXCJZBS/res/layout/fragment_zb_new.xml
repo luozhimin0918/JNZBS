@@ -12,7 +12,7 @@
         android:background="?attr/flash_top"
         android:layout_height="wrap_content">
         <TextView
-            android:text="广鑫财经"
+            android:text="@string/app_name"
             android:textColor="#ffffff"
             android:layout_marginTop="8dp"
             android:textSize="16dp"
@@ -24,7 +24,7 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.jyh.gxcjzbs.view.PageLoadLayout
+        <com.jyh.byzb.view.PageLoadLayout
             android:id="@+id/page_load"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                         android:background="@color/line_color2"/>
                 </LinearLayout>
             </ScrollView>
-        </com.jyh.gxcjzbs.view.PageLoadLayout>
+        </com.jyh.byzb.view.PageLoadLayout>
         <ImageView
             android:visibility="gone"
             android:id="@+id/playBigBtn"

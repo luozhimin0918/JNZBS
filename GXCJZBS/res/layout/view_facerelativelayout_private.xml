@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jyh.gxcjzbs.view.FaceRelaPriveLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jyh.byzb.view.FaceRelaPriveLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                          xmlns:fresco="http://schemas.android.com/apk/res-auto"
                                          xmlns:tools="http://schemas.android.com/tools"
                                          android:id="@+id/FaceRelativeLayout"
@@ -180,4 +180,4 @@
 
     </LinearLayout>
 
-</com.jyh.gxcjzbs.view.FaceRelaPriveLayout>
+</com.jyh.byzb.view.FaceRelaPriveLayout>
