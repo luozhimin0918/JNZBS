@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/rootView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/flash_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/liveFullId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="14dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_live_full"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sel_video_play"
+                android:visibility="gone"
+                android:id="@+id/playBtn"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/livebackId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="14dp"
+        android:background="#0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/live_back"/>
+
+</FrameLayout>

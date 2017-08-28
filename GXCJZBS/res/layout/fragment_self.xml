@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/self_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="?attr/flash_top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="?attr/rl_tv"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_user"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?attr/flash_blow_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/self_userimg"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/self_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textColor="?attr/flash_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_ll_tj"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/flash_blow_bg"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/tj_icon" />
+
+        <TextView
+            android:id="@+id/self_tv_tj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="推荐给我的好友"
+            android:textColor="?attr/flash_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_ll_clear"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/flash_blow_bg" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/clear_icon" />
+
+        <TextView
+            android:id="@+id/self_tv_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="清理缓存"
+            android:textColor="?attr/flash_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="?attr/flash_blow_bg" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/about_icon" />
+
+        <TextView
+            android:id="@+id/self_tv_about"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="版本更新"
+            android:textColor="?attr/flash_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_ll_fk"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="?attr/flash_blow_bg"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/fdde_back_icon" />
+
+        <TextView
+            android:id="@+id/self_tv_fk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="意见反馈"
+            android:textColor="?attr/flash_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/self_ll_out"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        android:background="?attr/flash_blow_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/self_tv_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:text="安全退出"
+            android:textColor="#e14545" />
+    </LinearLayout>
+
+</LinearLayout>

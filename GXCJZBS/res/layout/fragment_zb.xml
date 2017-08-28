@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/live_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomLayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/img_jianjie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="45"
+            android:adjustViewBounds="true"
+            android:src="@drawable/live_jianjie"/>
+
+        <ImageView
+            android:id="@+id/img_kefu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="45"
+            android:adjustViewBounds="true"
+            android:src="@drawable/live_kefu"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

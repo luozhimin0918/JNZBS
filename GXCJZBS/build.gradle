@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':Lib_android_gif_drawable')
+    compile project(':Lib_Fresco')
+    compile project(':Lib_AndroidAsync')
+    //    compile 'com.jakewharton:butterknife:8.4.0'
+    //    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    allprojects {
+        repositories {
+            mavenCentral()
+//            maven { url "https://jitpack.io" }
+        }
+    }
+    compile project(':Lib_autobahn')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/gensee_baseplayer.jar')
+    compile files('libs/gensee_common.jar')
+    compile files('libs/gensee_doc.jar')
+    compile files('libs/gensee_hb.jar')
+    compile files('libs/gensee_rtmpplayer.jar')
+    compile project(':convenientbanner')
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile files('libs/core_zxing.jar')
+//    compile 'com.github.luozhimin0918.LuoComLibJitPack:percent-support-extends:m1.0.34'
+    compile files('libs/super_7.jar')
+}
+android {
+//
+//    productFlavors {
+///*
+//*多渠道打包 gradlew assembleRelease
+// */
+//        c360_1 {}
+//        c360_2 {}
+//        c360_3 {}
+//        c360_4 {}
+//        c360_5 {}
+//        c360_6 {}
+//        c360_7 {}
+//
+//        productFlavors.all { flavor ->
+//            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//        }
+//    }
+    signingConfigs {
+        config {
+            keyAlias 'cjdjczbs'
+            keyPassword 'cjdjczbs'
+            storeFile file('./keystore/cjdjczbs.jks')
+            storePassword 'cjdjczbs'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"//是否输出LOG信息
+            minifyEnabled false//混淆编译
+            zipAlignEnabled true
+            //移除无用的资源文件
+
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"//是否输出LOG信息
+            minifyEnabled false//混淆编译
+            zipAlignEnabled true
+            //移除无用的资源文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+             signingConfig signingConfigs.config
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude '.readme'
+    }
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets {
+
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+

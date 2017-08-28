@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+    <dimen name="sc_delet_w">40dp</dimen>
+    <dimen name="sc_delet_h">28dp</dimen>
+    
+    <dimen name="start_bg_height">95dp</dimen>
+    
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="textSize_a">12sp</dimen>
+    <dimen name="textSize_b">10sp</dimen>
+</resources>

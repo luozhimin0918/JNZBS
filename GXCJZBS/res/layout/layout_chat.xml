@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/chat_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.jyh.gxcjzbs.view.MyListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#0000"
+                    android:clickable="false"
+                    android:divider="@null"
+                    android:dividerHeight="2dp"
+                    android:listSelector="#00000000"
+                    android:scrollbarStyle="outsideOverlay"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- 聊天输入框 -->
+
+                    <include
+                        android:id="@+id/layout"
+                        layout="@layout/view_facerelativelayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

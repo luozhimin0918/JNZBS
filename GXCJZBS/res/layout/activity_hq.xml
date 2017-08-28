@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/flash_top"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="?attr/flash_top"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="80dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/self_fk_img"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/return_tag"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/self_out_img"
+                android:layout_width="40dp"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/out_tag"/>
+            </LinearLayout>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="联系客服"
+            android:textColor="?attr/rl_tv"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/web_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="?android:progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/shape_progress_bar_bg"
+        android:max="100"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/zbjj">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="没有网络，请稍候再试"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

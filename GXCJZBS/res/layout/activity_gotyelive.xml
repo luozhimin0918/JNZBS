@@ -1,0 +1,208 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/rootView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/flash_bg">
+
+    <com.jyh.gxcjzbs.view.MyLinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/liveFullId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="14dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_live_full"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sel_video_play"
+                android:visibility="gone"
+                android:id="@+id/playBtn"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/menuId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="#242c3c"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="41dp"
+                android:background="@drawable/chat_logo"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chatId"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:text="聊天"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:id="@+id/chatbgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/selector_chat_line"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/serviceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:text="客服"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:id="@+id/servicebgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/selector_chat_line"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/functionId"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:text="功能"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:id="@+id/functionbgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/selector_chat_line"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.jyh.gxcjzbs.view.MyViewPager2
+            android:id="@+id/live_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"/>
+    </com.jyh.gxcjzbs.view.MyLinearLayout>
+
+    <ImageView
+        android:id="@+id/livebackId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="14dp"
+        android:background="#0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/live_back"/>
+
+    <LinearLayout
+        android:id="@+id/floatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/private_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/chat_private"/>
+
+            <View
+                android:id="@+id/private_btn_point"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_red_point"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/chat_dl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/chat_dl"/>
+
+        <ImageView
+            android:id="@+id/chat_cl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/chat_cl"/>
+
+        <ImageView
+            android:id="@+id/chat_chat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/chat_chat"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/web_progressBar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:progressDrawable="@drawable/shape_progress_bar_bg"
+            android:max="100"
+            />
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/web_progressBar"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络错误，请稍候再试"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <!--<include layout="@layout/kxt_loading_dialog"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>-->
+</FrameLayout>

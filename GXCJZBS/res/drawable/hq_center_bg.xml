@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ 	<item android:drawable="@color/hq_color_end" android:state_selected="false"></item>
+    <item android:drawable="@color/hq_color_start" android:state_selected="true"></item>
+
+</animation-list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/icon_17yk"
+        />
+
+    <View
+        android:id="@+id/red_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_red_point"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/user_photo"
+        android:layout_alignTop="@id/user_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_photo"
+        android:gravity="center_vertical"
+        android:textColor="#333333"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_photo"
+        android:layout_marginTop="10dp"
+        android:background="#e2e2e2"/>
+</RelativeLayout>

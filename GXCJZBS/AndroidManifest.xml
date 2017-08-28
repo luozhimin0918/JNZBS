@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jyh.gxcjzbs"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 创建删除桌面图标所需权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name="com.jyh.gxcjzbs.bean.KXTApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.jyh.gxcjzbs.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.gxcjzbs.AdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.jyh.gxcjzbs.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.jyh.gxcjzbs.Login_One"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.jyh.gxcjzbs.Register_One"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.jyh.gxcjzbs.GotyeLiveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".GenseeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.CLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme"/>
+
+        <activity
+            android:name="com.jyh.gxcjzbs.FunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.WebActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.MineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.UserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.ChangePwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jyh.gxcjzbs.ChangeNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrivateChatActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+        />
+
+        <service android:name="com.jyh.gxcjzbs.service.ChatService">
+            <intent-filter android:priority="1000">
+                <action android:name="ChatService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.jyh.gxcjzbs.service.ImageService">
+            <intent-filter android:priority="1000">
+                <action android:name="ImageService"/>
+            </intent-filter>
+        </service>
+
+        <!-- 监听网络状态的广播 -->
+        <receiver
+            android:name="com.jyh.gxcjzbs.receiver.LoadedImgReceiver"
+            android:exported="true"
+            android:priority="2147483647">
+            <intent-filter android:priority="1000">
+                <action android:name="loadimg"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5982e937f29d9811c60014de">
+        </meta-data>
+
+       <meta-data
+           android:name="UMENG_CHANNEL"
+           android:value="sina" />
+    </application>
+
+</manifest>

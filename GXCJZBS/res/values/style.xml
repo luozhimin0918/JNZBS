@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认风格 -->
+    <style name="BrowserThemeDefault" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#ffffff</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#116bcc</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#ffffff</item>
+        <item name="flash_top">#1177E0</item>
+        <item name="flash_top_image">@drawable/player</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#f4f4f4</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="hq_btn">@drawable/hq_more</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="color_live">@drawable/selector_live_bg2</item>
+        <item name="sel_chat">@drawable/selector_live_chat</item>
+        <item name="sel_list">@drawable/selector_live_list</item>
+        <item name="sel_fun">@drawable/selector_live_function</item>
+        <item name="sel_kefu">@drawable/selector_live_service</item>
+        <item name="bq_bg">#00000000</item>
+        <item name="bq_mr">@drawable/selector_chat_mr</item>
+        <item name="bq_ct">@drawable/selector_chat_ct</item>
+        <item name="bq_blx">@drawable/selector_chat_x</item>
+        <item name="bq_ppb">@drawable/selector_chat_ppb</item>
+        
+        <item name="live_jj">@drawable/live_jj</item>
+        
+        <item name="changepwd_tishi">@drawable/changepwd_tishi1</item>
+        <item name="changepwd_back">@drawable/changepwd_back1</item>
+
+        <item name="zbjj">#ffffff</item>
+        
+        <item name="sp_title">#f4f4f4</item>
+        <item name="yw_title">#1677E0</item>
+    </style>
+
+    <!-- 夜间模式 -->
+    <style name="BrowserThemeNight" parent="@android:style/android:Theme.Light.NoTitleBar">
+        <item name="zx_view">#021e3c</item>
+        <item name="flash_blow">#04274c</item>
+        <item name="flash_blow_bg">#04274c</item>
+        <item name="sp_listview">#04274c</item>
+        <item name="hq_tv_bg">#000000</item>
+        <item name="hq_ls_view">#0d0d0d</item>
+        <item name="tk_bg">#031e3c</item>
+        <item name="zx_list_cl">#04274c</item>
+        <item name="rl_tv">#999999</item>
+        <item name="dp_tv">#999999</item>
+        <item name="zx_bg">#031e3c</item>
+        <item name="flash_bg">#031e3c</item>
+        <item name="flash_tv">#999999</item>
+        <item name="hq_gird_bg">#003e80</item>
+        <item name="hq_tv">#999999</item>
+        <item name="self_bg">#031e3c</item>
+        <item name="flash_top">#04274c</item>
+        <item name="hq_top">#043465</item>
+        <item name="flash_top_image">@drawable/neight_zb</item>
+        <!-- <item name="flash_top_image_cm">@drawable/neight_dp</item> -->
+        <item name="yw_bg">#031e3c</item>
+        <item name="line_color">#666666</item>
+        <item name="line_btm_color">#666666</item>
+        <item name="color_image">@drawable/self_bg</item>
+        <item name="img_btn">@drawable/neight_add2</item>
+        <item name="hq_btn">@drawable/neight_add</item>
+        <item name="rl_img">@drawable/data_center</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo_yj</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select_night</item>
+        <item name="color_live">@drawable/selector_live_bg</item>
+        <item name="sel_chat">@drawable/selector_live_chat2</item>
+        <item name="sel_list">@drawable/selector_live_list2</item>
+        <item name="sel_fun">@drawable/selector_live_function2</item>
+        <item name="sel_kefu">@drawable/selector_live_service2</item>
+        <item name="bq_bg">@drawable/selector_bq_bg</item>
+        <item name="bq_mr">@drawable/selector_chat_mr2</item>
+        <item name="bq_ct">@drawable/selector_chat_ct2</item>
+        <item name="bq_blx">@drawable/selector_chat_x2</item>
+        <item name="bq_ppb">@drawable/selector_chat_ppb2</item>
+        
+        <item name="live_jj">@drawable/live_jj2</item>
+        
+        <item name="changepwd_tishi">@drawable/changepwd_tishi2</item>
+        <item name="changepwd_back">@drawable/changepwd_back2</item>
+        
+        <item name="zbjj">#031e3c</item>
+        
+        
+        <item name="sp_title">#043465</item>
+        <item name="yw_title">#04274c</item>
+        
+    </style>
+
+    <style name="CustomDeleteboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/checkbox_style</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/checkbox_player_style</item>
+    </style>
+
+    <style name="CustomGridCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/gridcheckbox_style</item>
+    </style>
+
+    <style name="popwindow_register_animation">
+        <item name="android:windowEnterAnimation">@anim/popwindwo_register_animation_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindwo_register_animation_out</item>
+    </style>
+
+</resources>

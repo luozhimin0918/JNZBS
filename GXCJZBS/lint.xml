@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="CommitPrefEdits" severity="ignore" />
+    <issue id="CutPasteId" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/jyh/fragment/fragment_dp.java" />
+        <ignore path="src/com/jyh/fragment/fragment_flash_main.java" />
+    </issue>
+    <issue id="ParcelCreator" severity="ignore" />
+    <issue id="Recycle" severity="ignore" />
+    <issue id="ResourceAsColor" severity="ignore" />
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

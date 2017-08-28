@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/bgWai"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pop"
+            android:orientation="vertical" >
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="收藏"
+                android:textColor="@color/app_title_background"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/saveBimap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="保存图片"
+                android:textColor="@color/app_title_background"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#CCC8C3" >
+            </View>
+            <TextView
+                android:id="@+id/popuwoindow_eqCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="识别图中二维码"
+                android:textColor="@color/app_title_background"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            >
+        </View>
+        <TextView
+            android:id="@+id/popuwoindow_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_pop"
+            android:padding="15dp"
+            android:text="取消"
+            android:textColor="@color/app_title_background"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

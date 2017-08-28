@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_bg_color">#FFFFFF</color>
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+    <color name="title">#333333</color>
+    <color name="frame">#e14545</color>
+    <color name="divider">#999797</color>
+    <!-- temp:#0099ff,#ff6633,559ae9 -->
+    <color name="app_title_background">#559ae9</color>
+    <color name="navi_background">#559ae9</color>
+    <color name="app_text_color">#444444</color>
+    <color name="left_drawer_user_name">#ffd4d4d4</color>
+    <!-- 主页面(快讯) -->
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="color_start">#e14545</color>
+    <color name="color_end">#e333</color>
+    <color name="data_color_start">#e46767</color>
+    <color name="data_color_end">#7f7f7f</color>
+    <color name="hq_color_start">#116bcc</color>
+    <color name="hq_color_end">#999999</color>
+    <!-- 导航-Navi -->
+    <color name="navi_line_color">#e0e0e0</color>
+    <color name="left_drawer_item_bg_normal">#ff393939</color>
+    <!-- 财经日历 -->
+    <color name="calendar_devide_line_color">#e0e0e0</color>
+    <!-- ETF -->
+    <!-- 设置 -->
+    <color name="setup_exit_btn_background">#ffffff</color>
+    <color name="setup_exit_text_color">#ccff0000</color>
+    <color name="normal_text">#FF758493</color>
+    <!-- 关于 -->
+    <!-- 意见反馈 -->
+    <color name="advice_edit_text_color_content">#c3c3c3</color>
+    <color name="advice_edit_text_color_email">#c3c3c3</color>
+    <color name="advice_edit_text_background">#ffffff</color>
+
+    <!-- 分享(新浪+微信+QQ) -->
+    <color name="share_btn_cancel_background">#ededed</color>
+    <color name="share_cancel_btn_text_color">#000000</color>
+
+    <!-- ListView点击时去掉默认颜色 -->
+    <color name="unfocused">#ffffff</color>
+    <color name="pressed">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="selected">#ffffff</color>
+    <color name="focused">#ffffff</color>
+    <color name="kxt_list_selector">#00ffffff</color>
+    <color name="kxt_calendar_item_text_color">#c3c3c3</color>
+
+    <!-- 行情中心 -->
+    <color name="stock_table_head_item_color">#000000</color>
+    <color name="stock_table_name_bgcolor">#e5e5e5</color>
+    <color name="item_hvlistview_textcolor">#404040</color>
+    <color name="hq_item_text_red">#ff422a</color>
+    <color name="hq_item_text_green">#4aaf0a</color>
+    <color name="hq_item_text_black">#111111</color>
+
+    <!-- 设置字体大小 -->
+    <color name="setting_bg">#eaeaea</color>
+    <color name="zdy_color">#ffffff</color>
+    <color name="zdy_color_neight">#999999</color>
+    <color name="main_ll_bg">#ffffff</color>
+    <color name="main_ll_bg_neight">#031e3c</color>
+
+    <!-- 直播界面 -->
+    <color name="line1">#FF6600</color>
+    <color name="line2">#242c3c</color>
+
+    <color name="selectedPointColor">#000000</color>
+    <color name="unselectedPointColor">#999999</color>
+    <color name="line_color2">#fff7f7f7</color>
+    <color name="transparent">#00000000</color>
+
+
+
+</resources>
