@@ -1,5 +1,5 @@
 include ':Lib_Fresco', ':convenientbanner'
 include ':Lib_autobahn'
 include ':Lib_AndroidAsync'
-include ':GXCJZBS'
+include ':JNTZBS'
 include ':Lib_android_gif_drawable'
