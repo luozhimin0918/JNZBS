@@ -7,6 +7,7 @@
    >
 
     <LinearLayout
+        android:visibility="gone"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:background="?attr/flash_top"
