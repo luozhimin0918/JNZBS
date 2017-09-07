@@ -71,7 +71,7 @@ public class WebActivity extends Activity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		setTheme(R.style.BrowserThemeDefault);
 
-		if (!summary_url.equals(url)) {
+		if (url.contains("kefu")) {
 			isKF = true;
 			setContentView(R.layout.activity_hq2);
 		} else {
@@ -127,16 +127,21 @@ public class WebActivity extends Activity {
 		webSeting.setDisplayZoomControls(false);
 		webSeting.setBuiltInZoomControls(true);
 		webView.removeJavascriptInterface("searchBoxJavaBridge_");
-		if (isKF)
+		if (isKF){
 			webView.addJavascriptInterface(new isQQ(), "QQ");
+		}
+
 		webView.setWebViewClient(new WebViewClient() {
 
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
 				// Log.i("kefu", "shouldOverrideUrlLoading" + url);
-				isGoBack=true;
-				self_out_img.setVisibility(View.VISIBLE);
+				if(!isKF){
+					isGoBack=true;
+					self_out_img.setVisibility(View.VISIBLE);
+				}
+
 				return super.shouldOverrideUrlLoading(view, url);
 			}
 
