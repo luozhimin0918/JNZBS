@@ -140,12 +140,12 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5982e937f29d9811c60014de">
+            android:value="59b23386cae7e7436c0001de">
         </meta-data>
 
        <meta-data
            android:name="UMENG_CHANNEL"
-           android:value="sina" />
+           android:value="jnzbs" />
     </application>
 
 </manifest>
